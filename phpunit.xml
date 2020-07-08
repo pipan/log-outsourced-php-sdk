@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<phpunit xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:noNamespaceSchemaLocation="./vendor/phpunit/phpunit/phpunit.xsd"
+         bootstrap="vendor/autoload.php"
+         colors="true">
+    <testsuites>
+        <testsuite name="Tests">
+            <directory suffix="Test.php">./tests</directory>
+        </testsuite>
+    </testsuites>
+    <filter>
+        <whitelist processUncoveredFilesFromWhitelist="true">
+            <directory suffix=".php">./app</directory>
+        </whitelist>
+    </filter>
+    <php>
+        <server name="REQUEST_SCHEME" value="http"/>
+        <server name="HTTP_HOST" value="www.phpunit.test"/>
+        <server name="REQUEST_URI" value="/uri"/>
+        <server name="REQUEST_METHOD" value="GET"/>
+        <server name="REMOTE_ADDR" value="127.0.0.1"/>
+        <server name="HTTP_USER_AGENT" value="phpunit"/>
+        <server name="SERVER_SOFTWARE" value="phpunit"/>
+    </php>
+</phpunit>
