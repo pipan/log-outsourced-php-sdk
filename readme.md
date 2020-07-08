@@ -1,5 +1,9 @@
 # Log Outsourced PHP SDK
 
+[![Build Status](https://travis-ci.com/pipan/log-outsourced-php-sdk.svg?branch=master)](https://travis-ci.com/pipan/log-outsourced-php-sdk)
+
+PHP SDK for Log Outsourced API
+
 ## Installation
 
 `composer require outsourced/log-sdk`
