@@ -2,7 +2,6 @@
 
 namespace LogOutsourcedSdk;
 
-use GuzzleHttp\Client;
 use Psr\Log\LoggerInterface;
 
 class LogOutsourcedFacade
@@ -10,7 +9,7 @@ class LogOutsourcedFacade
     public static function create($uri, $context = [])
     {
         return new HttpLogOutsourced(
-            new Client([
+            new GuzzleClientWrapper([
                 'base' => $uri
             ]), [
                 'uri' => $uri,
