@@ -1,7 +1,7 @@
 {
     "name": "outsourced/log-sdk",
     "type": "library",
-    "version": "0.1.0",
+    "version": "0.1.1",
     "description": "PHP SDK for Log Outsourced API",
     "keywords": [
         "log",
