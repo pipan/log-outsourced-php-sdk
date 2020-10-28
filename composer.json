@@ -1,13 +1,14 @@
 {
-    "name": "outsourced/log-sdk",
+    "name": "outsourced/sdk",
     "type": "library",
-    "version": "0.1.3",
-    "description": "PHP SDK for Log Outsourced API",
+    "version": "0.2.0",
+    "description": "PHP SDK for Outsourced API",
     "keywords": [
         "log",
         "logging",
         "library",
-        "outsource"
+        "outsourced",
+        "permissions"
     ],
     "license": "MIT",
     "require": {
@@ -27,7 +28,7 @@
     },
     "autoload": {
         "psr-4": {
-            "LogOutsourcedSdk\\": "src/"
+            "OutsourcedSdk\\": "src/"
         }
     },
     "autoload-dev": {
