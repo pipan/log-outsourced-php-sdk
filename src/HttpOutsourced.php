@@ -27,14 +27,14 @@ class HttpOutsourced implements Outsourced
         if (!isset($config['accessKey'])) {
             throw new MissingValueException('Host config value is missing');
         }
-        
+
         $loggingContext = [
             'url' => $_SERVER['REQUEST_SCHEME'] . '://' . $_SERVER['HTTP_HOST'] . $_SERVER['REQUEST_URI'],
             'method' => $_SERVER['REQUEST_METHOD'],
             'ip' => $_SERVER['REMOTE_ADDR'],
             'user_agent' => $_SERVER['HTTP_USER_AGENT'],
             'server' => $_SERVER['SERVER_SOFTWARE'],
-            'php' => phpversion()
+            'runtime' => 'php' . phpversion()
         ];
         $loggingContext = array_merge($config['logging']['context'] ?? [], $loggingContext);
 

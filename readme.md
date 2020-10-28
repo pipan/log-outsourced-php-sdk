@@ -127,7 +127,7 @@ If you create `HttpOutsourced` instance by calling `make` or `makeWithGuzzle` yo
 * ip - user IP
 * user_agent - user agent name
 * server - server software
-* php - php version
+* runtime - language + version (in this case php + php_version)
 
 ### LoggerInterface
 
