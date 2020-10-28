@@ -33,7 +33,7 @@ class RequestTestCase extends TestCase
             'ip' => '127.0.0.1',
             'user_agent' => 'phpunit',
             'server' => 'phpunit',
-            'php' => phpversion()
+            'runtime' => 'php' . phpversion()
         ]);
     }
 }
