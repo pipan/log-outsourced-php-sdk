@@ -1,6 +1,6 @@
 <?php
 
-namespace LogOutsourcedSdk;
+namespace OutsourcedSdk;
 
 use GuzzleHttp\Client;
 use Psr\Http\Client\ClientInterface;
@@ -11,9 +11,9 @@ class GuzzleClientWrapper implements ClientInterface
 {
     private $client;
 
-    public function __construct($config)
+    public function __construct()
     {
-        $this->client = new Client($config);
+        $this->client = new Client();
     }
 
     public function sendRequest(RequestInterface $request): ResponseInterface
