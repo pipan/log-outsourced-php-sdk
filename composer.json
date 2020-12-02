@@ -1,7 +1,7 @@
 {
     "name": "outsourced/sdk",
     "type": "library",
-    "version": "0.2.1",
+    "version": "0.3.0",
     "description": "PHP SDK for Outsourced API",
     "keywords": [
         "log",
@@ -13,8 +13,8 @@
     "license": "MIT",
     "require": {
         "php": "^7.2",
-        "guzzlehttp/guzzle": "^6.5",
-        "guzzlehttp/psr7": "^1.6",
+        "guzzlehttp/guzzle": "^7.2",
+        "guzzlehttp/psr7": "^1.7",
         "psr/http-client": "^1.0",
         "psr/log": "^1.0"
     },
